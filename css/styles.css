@@ -456,3 +456,80 @@ button {
 .order-service-btn:focus {
   background-color: #404bbf;
 }
+/* ================ OUR BENEFITS STYLE ================ */
+.benefits-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.benefits-list {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+}
+.icon-bacground {
+  width: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  height: 112px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.benefits-list-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .benefits-list-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .benefits-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .benefits-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .icon-bacground {
+    display: flex;
+  }
+  .benefits-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .benefits-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+  }
+  .benefits-list-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-weight: 400;
+  }
+}
